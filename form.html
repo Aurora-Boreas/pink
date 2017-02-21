@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy - Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__logo">Pink</h1>
+        <nav class="main-nav">
+          <a href="#" class="main-nav__toggle"></a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">html Academy</a></li>
+            </ul>
+        </nav>
+      
+      </div>
+    </header>
+    
+    <main class="form-page">
+      <section class="promo promo--slogan">
+        <div class="promo__wrapper promo__wrapper--slogan">
+          <h2 class="promo__title promo__title--slogan">Конкурс на самое безбашеное путешествие с Пинк</h2>
+          <p class="promo__text promo__text--slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>    
+        </div>
+      </section>
+    
+      <section class="feedback-form">
+        <div class="feedback-form__wrapper">
+          <form  action="https://echo.htmlacademy.ru" method="get">
+
+            <div class="introduction">
+              <label for="surname" class="introduction__label">Фамилия:</label>
+              <input type="text" class="introduction__input" name="surname" id="surname" value="Укажите фамилию *">
+              <label for="first_name" class="introduction__label">Имя:</label>
+              <input type="text" class="introduction__input" name="first_name" id="first_name" value="Введите ваше имя *">
+              <label for="patronymic" class="introduction__label">Отчество:</label>
+              <input type="text" class="introduction__input" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+            </div>
+
+            <div class="achievement">
+              <h3 class="achievement__title">Ваши безбашенные достижения в путешествии</h3>
+                <ul class="achievement__list">
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-1" name="a-i-1" checked="checked" type="checkbox">                
+                    <label class="achievement__label" for="a-i-1">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-2" name="a-i-2" checked="checked" type="checkbox">                
+                    <label class="achievement__label" for="a-i-2">Обгорел на пляже</label>
+                  </li>
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-3" name="a-i-3" type="checkbox">                
+                    <label class="achievement__label" for="a-i-3">Видел Чака Норриса</label>
+                  </li>
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-4" name="a-i-4" type="checkbox">                
+                    <label class="achievement__label" for="a-i-4">Накупил сувениров</label>
+                  </li>
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-5" name="a-i-5" checked="checked" type="checkbox">                
+                    <label class="achievement__label" for="a-i-5">Удержал башню</label>
+                  </li>
+                  <li class="achievement__item">
+                    <input class="achievement__input" id="a-i-6" name="a-i-6" type="checkbox">                
+                    <label class="achievement__label" for="a-i-6">Разгромил отель</label>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="introduction">
+              <label for="phone" class="introduction__label">Номер телефона</label>
+              <input type="text" class="introduction__input" name="phone" id="phone" value="Номер, пожалуйста">
+              <label for="email" class="introduction__label">адресок почты</label>
+              <input type="text" class="introduction__input" name="email" id="email" value="Введите почту *">
+            </div>
+
+            <div class="app-quiz">
+              <h3 class="app-quiz__title"></h3>
+              <ul class="app-quiz__list">
+                <li class="app-quiz__item">
+                  <input class="app-quiz__input" id="a-q-1" name="a-q-1" checked="checked" type="radio">              
+                  <label for="a-q-1" class="app-quiz__label">Pink для iOS</label>
+                </li>
+                <li class="app-quiz__item">
+                  <input class="app-quiz__input" id="a-q-2" name="a-q-2" type="radio">              
+                  <label for="a-q-2" class="app-quiz__label">Pink на Android</label>
+                </li>
+                <li class="app-quiz__item">
+                  <input class="app-quiz__input" id="a-q-3" name="a-q-3" type="radio">              
+                  <label for="a-q-3" class="app-quiz__label">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="user-description">
+              <h3 class="user-description__title"></h3>
+              <textarea name="description" id="description" cols="30" rows="10" class="user-description__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+
+            <div class="btn-submit">
+              <button class="btn-submit btn-submit--send" type="submit">Отправить форму</button>
+              <p class="btn-submit__required">* — обязательные поля</p>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+    </main>  
+
+    <footer class="form-footer">
+      <div class="poto-footer__wrapper">
+        <div class="footer-logo">
+          <a href="#" class="footer-logo__link"></a>
+          <h2 class="footer-logo__title">Pink</h2>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social__tw">Twitter</a>
+          <a href="#" class="footer-social__fb">Facebook</a>
+          <a href="#" class="footer-social__yt">Youtube</a>
+        </div>
+
+        <div class="footer-author">
+          <span class="footer-author__text">Разработано</span>
+          <a href="http://htmlacademy.ru" class="footer-author__link"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>    

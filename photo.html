@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy - Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__logo">Pink</h1>
+        <nav class="main-nav">
+          <a href="#" class="main-nav__toggle"></a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">html Academy</a></li>
+            </ul>
+        </nav>
+      
+      </div>
+    </header>
+    
+    <main class="photo-page">
+     <section class="promo promo--slogan">
+        <div class="promo__wrapper promo__wrapper--slogan">
+          <h2 class="promo__title promo__title--slogan">Фотографии пользователей</h2>
+          <p class="promo__text promo__text--slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>    
+        </div>
+      </section> 
+
+      <section class="photo-container">
+        <div class="photo-container__wrapper">
+          <article class="photo-container__item">
+            <p class="photo-container__first-rait">Панорама дня</p>
+            <img src="" alt="" class="photo-container__picture">
+            <span class="photo-container__autor">Анна</span>
+            <p class="photo-container__countdown">(5 минут назад)</p>
+            <p class="photo-container__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-container__like">Нравится: 215</p>
+          </article>
+
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Левон</span>
+            <p class="photo-container__countdown">(5 часов назад)</p>
+            <p class="photo-container__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo-container__like">Нравится: 356</p>
+          </article>
+
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Антон</span>
+            <p class="photo-container__countdown">(5 часов назад)</p>
+            <p class="photo-container__description">Соседи будут рады!</p>
+            <p class="photo-container__like">Нравится: 666</p>
+          </article>
+          
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Борис</span>
+            <p class="photo-container__countdown">(20 часов назад)</p>
+            <p class="photo-container__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo-container__like">Нравится: 215</p>
+          </article>
+          
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Сергей</span>
+            <p class="photo-container__countdown">(25 часов назад)</p>
+            <p class="photo-container__description">Самая кубанская в мире!</p>
+            <p class="photo-container__like">Нравится: 4</p>
+          </article>
+
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Максим</span>
+            <p class="photo-container__countdown">(40 часов назад)</p>
+            <p class="photo-container__description">Где снег-то?</p>
+            <p class="photo-container__like">Нравится: 150</p>
+          </article>
+
+          <article class="photo-container__item">
+            <span class="photo-container__autor">Надежда</span>
+            <p class="photo-container__countdown">(45 часов назад)</p>
+            <p class="photo-container__description">Всем GM и взаимные лайки!</p>
+            <p class="photo-container__like">Нравится: 2560</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="resume-block">
+        <div class="resume-block__wrapper">
+          <h2 class="resume-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+          <div class="resume-inner">
+            <img src="" alt="" class="resume-inner__picture">
+
+            <div class="control-block">
+              <ul class="control-block__list">
+                <li class="control-block__item">
+                    <input class="control-block__input" id="frame" name="control-button" checked="checked" type="radio">
+                    <label class="control-block__label" for="frame">Frame</label>
+                </li>
+                <li class="control-block__item">
+                    <input class="control-block__input" id="paint_bucket" name="control-button" type="radio">
+                    <label class="control-block__label" for="paint_bucket">Paint Bucket</label>
+                </li>
+                <li class="control-block__item">
+                    <input class="control-block__input" id="brightness" name="control-button" type="radio">
+                    <label class="control-block__label" for="brightness">Brightness</label>
+                </li>
+              </ul> 
+              <div class="control-block__range">
+                <div class="control-block__scale-slider">
+                  <div class="control-block__bar"></div>
+                </div>
+                <button class="control-block__toggle control-block__toggle--scale-slider-min" type="button" tabindex="-1"></button>
+                <button class="control-block__toggle control-block__toggle--scale-slider-max" type="button" tabindex="-1"></button>
+              </div>
+            </div>
+
+            <div class="btn-submit">
+              <button class="btn-submit btn-submit--post" type="submit">Запостить</button>
+              <button class="btn-submit btn-submit--cancel" type="submit">Отмена</button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="photo-footer">
+      <div class="photo-footer__wrapper">
+        <div class="footer-logo">
+          <a href="#" class="footer-logo__link"></a>
+          <h2 class="footer-logo__title">Pink</h2>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social__tw">Twitter</a>
+          <a href="#" class="footer-social__fb">Facebook</a>
+          <a href="#" class="footer-social__yt">Youtube</a>
+        </div>
+
+        <div class="footer-author">
+          <span class="footer-author__text">Разработано</span>
+          <a href="http://htmlacademy.ru" class="footer-author__link"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>    

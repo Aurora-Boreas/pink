@@ -1,10 +1,143 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HTML Academy - Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__logo">Pink</h1>
 
+        <nav class="main-nav">
+          <a href="#" class="main-nav__toggle"></a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+              <li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">html Academy</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="main-page">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <img alt="Meet Pink" class="promo__picture">
+          <a href="#" class="btn"></a>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__wrapper">
+          <p class="info__text">Устали от серости мегаполиса? </p>
+          <p class="info__text">Нам есть, что вам  предложить!</p>
+
+          <div class="features">
+            <p class="features__title">Поднимает настроение</p>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="features__title">Меняет мир вокруг</p>
+            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="features__title">Заводит новых друзей</p>
+            <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="review__wrapper">
+          <div class="review__items">
+
+            <div class="review-slider">
+              <input id="r-btn-1" name="review-slider__toggle" checked type="radio">
+              <input id="r-btn-2" name="review-slider__toggle" type="radio">
+              <input id="r-btn-3" name="review-slider__toggle" type="radio">
+              
+
+              <div class="review-slides">
+                <blockquote class="review-slides__item" id="slide1">
+                  <div class="review-slides__autor">Николай Петров</div>
+                  <p class="review-slides__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+
+                <div class="review-slides__controls">
+                  <label for="r-btn-1">1</label>
+                  <label for="r-btn-2">2</label>
+                  <label for="r-btn-3">3</label>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+ 
+      <section class="prices">
+        <div class="prices__wrapper">
+          <div class="prices-slider">
+                <input id="p-btn-1" name="prices-slider__toggle" type="radio">
+                <input id="p-btn-2" name="prices-slider__toggle" checked type="radio">
+                <input id="p-btn-3" name="prices-slider__toggle" type="radio">
+  
+                <div class="prices-slides">
+
+                  <table class="prices-slides__items">
+                    <thead>
+                    <tr>
+                      <th class="prices__description" colspan="2"><span>Стандарт</span><br><span>3,99 usd</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    
+                      <td class="prices__value">Розовый фильтр</td>
+                      <td class="prices__status">Yes</td>
+                    </tr>
+                    <tr>
+                      <td class="prices__value">Смайлики</td>
+                      <td class="prices__status">Yes</td>
+                    </tr>
+                    <tr>
+                      <td class="prices__value">Комментарии</td>
+                      <td class="prices__status">No</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  
+                  <div class="prices-slides__controls">
+                    <label for="p-btn-1">1</label>
+                    <label for="p-btn-2">2</label>
+                    <label for="p-btn-3">3</label>
+                  </div>
+
+                </div> 
+          </div>       
+        </div>
+      </section>
+
+
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__title">Остались вопросы?<br>Свяжитесь с нами!</div>
+
+          <div class="contacts">
+            <span class="contacts__title">Звоните:</span>
+            <a href="tel:+7 (812) 555-66-66" class="contacts__phone">+7 (812) 555-66-66</a>
+            <span class="contacts__title">Пишите:</span>
+            <a href="" class="contacts__email">mail@htmlacademy.ru</a>
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+          </div>
+
+          <div class="feedback__map"></div> 
+        </div>  
+      </section>
+    
+    </main>
+    
   </body>
 </html>
