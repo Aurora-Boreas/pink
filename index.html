@@ -7,29 +7,43 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
     <header class="page-header">
       <div class="page-header__wrapper">
-        <h1 class="page-header__logo">Pink</h1>
 
         <nav class="main-nav">
-          <a href="#" class="main-nav__toggle"></a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
-              <li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">html Academy</a></li>
-            </ul>
+          <div class="main-nav__top">
+              <a href="index.html" class="main-nav__logo-link">
+                <picture>
+                  <img src="" width="86" height="35" alt="Pink ">
+                </picture>
+              </a>
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="http://htmlacademy.ru" class="main-nav__link">html Academy</a></li>
+          </ul>
         </nav>
       </div>
     </header>
-    
+
     <main class="main-page">
       <section class="promo">
         <div class="promo__wrapper">
-          <img alt="Meet Pink" class="promo__picture">
-          <a href="#" class="btn"></a>
-          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+          <div class="promo__title">Взгляните на жизнь иначе!</div>
+          <div class="promo__description">
+            <a href="#" class="btn btn--download">Скачать приложение</a>
+            <ul class="promo__apps-list">
+              <li class="promo__apps-item promo__apps-item--apple"><a href="#"></a></li>
+              <li class="promo__apps-item promo__apps-item--android"><a href="#"></a></li>
+              <li class="promo__apps-item promo__apps-item--microsoft"><a href="#"></a></li>
+            </ul>
+            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+          </div>
         </div>
       </section>
 
@@ -37,16 +51,25 @@
         <div class="info__wrapper">
           <p class="info__text">Устали от серости мегаполиса? </p>
           <p class="info__text">Нам есть, что вам  предложить!</p>
+        </div>
 
-          <div class="features">
-            <p class="features__title">Поднимает настроение</p>
-            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            <p class="features__title">Меняет мир вокруг</p>
-            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            <p class="features__title">Заводит новых друзей</p>
-            <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features">
+          <div class="features__wrapper">
+            <div class="features__item  features__item--uplifting">
+              <p class="features__title">Поднимает настроение</p>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__item  features__item--change-world">
+              <p class="features__title">Меняет мир вокруг</p>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект.</p>
+            </div>
+            <div class="features__item  features__item--make-friends" >
+              <p class="features__title">Заводит новых друзей</p>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
+            </div>
           </div>
         </div>
+
       </section>
 
       <section class="review">
@@ -57,7 +80,7 @@
               <input id="r-btn-1" name="review-slider__toggle" checked type="radio">
               <input id="r-btn-2" name="review-slider__toggle" type="radio">
               <input id="r-btn-3" name="review-slider__toggle" type="radio">
-              
+
 
               <div class="review-slides">
                 <blockquote class="review-slides__item" id="slide1">
@@ -72,17 +95,17 @@
                 </div>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
       </section>
- 
+
       <section class="prices">
         <div class="prices__wrapper">
           <div class="prices-slider">
                 <input id="p-btn-1" name="prices-slider__toggle" type="radio">
                 <input id="p-btn-2" name="prices-slider__toggle" checked type="radio">
                 <input id="p-btn-3" name="prices-slider__toggle" type="radio">
-  
+
                 <div class="prices-slides">
 
                   <table class="prices-slides__items">
@@ -93,7 +116,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                    
+
                       <td class="prices__value">Розовый фильтр</td>
                       <td class="prices__status">Yes</td>
                     </tr>
@@ -107,15 +130,15 @@
                     </tr>
                     </tbody>
                   </table>
-                  
+
                   <div class="prices-slides__controls">
                     <label for="p-btn-1">1</label>
                     <label for="p-btn-2">2</label>
                     <label for="p-btn-3">3</label>
                   </div>
 
-                </div> 
-          </div>       
+                </div>
+          </div>
         </div>
       </section>
 
@@ -133,11 +156,13 @@
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </div>
 
-          <div class="feedback__map"></div> 
-        </div>  
+          <div class="feedback__map"></div>
+        </div>
       </section>
-    
+
+    <script src="js/main.js"></script>
+
     </main>
-    
+
   </body>
 </html>

@@ -1,0 +1,17 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -41px;
+}
+
+.info__wrapper {
+  @include wrapper-container();
+}
+
+.info__text {
+  @include set-font(24px, 20px);
+  font-family: $main-font-light;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}

@@ -1,34 +1,32 @@
 {
   "name": "pink",
-  "version": "1.0.0",
-  "description": "task project",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Pink» от HTML Academy",
   "devDependencies": {
-    "autoprefixer": "^6.7.2",
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "autoprefixer": "^6.7.7",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-less": "^1.4.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-csso": "^2.2.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-svgmin": "^4.0.0",
-    "grunt-svgstore": "^1.0.0",
-    "load-grunt-tasks": "^3.5.2"
+    "grunt-sass": "^2.0.0",
+    "node-uuid": "^1.4.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "editorconfig-cli",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aurora-Boreas/pink.git"
-  },
-  "author": "Aurora Boreas\u001b[Da\u001b[C\u001b[Ds",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Aurora-Boreas/pink/issues"
-  },
-  "homepage": "https://github.com/Aurora-Boreas/pink#readme"
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "6.10"
+  }
 }

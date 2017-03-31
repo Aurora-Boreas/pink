@@ -1,0 +1,19 @@
+.btn {
+  display:flex;
+  font-family: $main-font-bold;
+  justify-content: center;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  background-color: transparet;
+
+  &--download {
+    width: 100%;
+    @include set-font(18px, 18px);
+    
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 25px 25px;
+    background-color: #1d2631;
+
+  }
+}

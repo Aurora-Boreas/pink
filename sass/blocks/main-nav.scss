@@ -1,0 +1,112 @@
+.main-nav {
+  background-color: #283645;
+  border-bottom: 1px solid #283544;
+}
+
+.main-nav__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+
+  min-height: 64px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+/*  opacity: 0.5;*/
+  border-bottom: 1px solid #000000;
+
+  @include media(tablet) {
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 86px;
+  };
+  @include media(desktop) {
+    justify-content: center;
+  };
+}
+
+.main-nav__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  padding-top: 4px;
+  background: url('../img/logo-pink-white-mobile.svg') no-repeat;
+  width: 75px;
+  height: 25px;
+  font-size: 0;
+    @include media(tablet) {
+    width: 114px;
+    margin-right: 0;
+  };
+}
+
+.main-nav__toggle {
+  display: flex;
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  opacity: 1;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  background: url('../img/icon-menu-burger.svg') no-repeat 50% 50%;
+
+  @include media(tablet) {
+    display: none;
+  };
+
+  &--close {
+    background: url('../img/icon-menu-cross.svg') no-repeat 50% 50%;
+  }
+}
+
+.main-nav__list {
+  display: none;
+  width: 320px;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 65px;
+  list-style: none;
+
+
+  @include media(tablet) {
+    display: flex;
+    background-color: transparent;
+    width: 668px;
+  };
+
+    @include media(desktop) {
+    width: 1050px;
+   };
+
+  &--open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70px;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+
+  a {
+    color: #ffffff;
+    text-transform: uppercase;
+    @include set-font(18px, 32px);
+    font-family: $main-font-bold;
+  }
+}

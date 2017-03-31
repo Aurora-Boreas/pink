@@ -1,0 +1,39 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.features__wrapper {
+  @include wrapper-container();
+}
+
+.features__item {
+
+
+  &--uplifting {
+
+  }
+
+  &--change-world {
+
+  }
+
+  &--make-friends {
+    padding-bottom: 277px;
+    background: transparent 61px 182px url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  }
+}
+
+.features__title {
+  @include set-font(18px, 10px);
+  font-family: $main-font-bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.features__text {
+  @include set-font(14px, 24px);
+  font-family: $main-font-regular;
+}
