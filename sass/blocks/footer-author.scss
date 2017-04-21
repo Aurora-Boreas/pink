@@ -1,0 +1,31 @@
+.footer-author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-author__link {
+  display: flex;
+  align-content: center;
+
+  @include set-font(19px, 18px);
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.footer-author__link  svg {
+  margin-left: 29px;
+  fill: $bg-pink;
+}
+
+.footer-author__link:hover svg {
+  fill: $bg-color;
+}
+
+.footer-author__link:active svg {
+  fill: rgba(40, 54, 79, 0.3);
+}

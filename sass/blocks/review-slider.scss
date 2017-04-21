@@ -1,0 +1,96 @@
+.review-slider {
+  @include media(desktop) {
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+.review-slider__toggle[type="radio"] {
+  display: none;
+}
+
+.review-slider__controls {
+  text-align: center;
+}
+
+.review-slider__controls label{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: top;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #bec2c7;
+  margin: 0 6px 0 0;
+}
+
+.review-slider__toggle:checked + label {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 3px solid #283645;
+}
+
+.review-slider__buttons {
+  display: none;
+}
+
+.review-slider__author {
+  @include set-font(18px, 30px);
+  font-weight: bold;
+
+  @include media(tablet) {
+    @include set-font(20px, 30px);
+    padding-bottom: 3px;
+    order: 0;
+  }
+
+  @include media(desktop) {
+    @include set-font(24px, 30px);
+  }
+}
+
+.review-slider__item {
+  margin: 0;
+  text-align: center;
+
+  @include media(desktop) {
+    width: 700px;
+  }
+}
+
+.review-slider__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.review-slider__text {
+  @include set-font(14px, 30px)
+
+  @include media(tablet) {
+    @include set-font(18px, 30px)
+    order: -1;
+    padding-bottom: 35px;
+  }
+}
+
+.review-slider__author-decription {
+  display: none;
+
+  @include media(tablet) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 2;
+
+    @include set-font(14px, 30px);
+  }
+
+  @include media(desktop) {
+    @include set-font(18px, 30px);
+  }
+}
