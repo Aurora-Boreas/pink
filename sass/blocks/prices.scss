@@ -33,6 +33,10 @@
 .prices__slides {
   position: relative;
   overflow: scroll;
+
+  @include media(tablet){
+    overflow: hidden;
+  }
 }
 
 .prices__description {
