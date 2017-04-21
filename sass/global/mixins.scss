@@ -6,30 +6,39 @@
 @mixin media($screen) {
 
   @if $screen==tablet {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 700px) {
       @content;
     }
   }
 
   @if $screen==desktop {
-    @media screen and (min-width: 1150px) {
+    @media screen and (min-width: 1200px) {
       @content;
     }
+  }
+}
+
+@mixin retina() {
+ @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+  @media (min-resolution: 1.5dppx) {
+    @content;
   }
 }
 
 @mixin wrapper-container() {
   width: 320px;
   margin: 0 auto;
-  padding: 0 29px;
-  
+  padding: 0 20px;
+
   @include media(tablet) {
-    width: 668px;
-    padding: 0;
+    width: 700px;
+    padding: 0 40px;
   };
 
   @include media(desktop) {
-    width: 1050px;
-    padding: 0;
+    width: 1200px;
+    padding: 0 130px;
   };
 }

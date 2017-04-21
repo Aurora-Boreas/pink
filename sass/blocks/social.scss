@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+  margin-right: 5px;
+  font-size: 0;
+
+
+  @include media(tablet) {
+    margin-right: 0px;
+    padding-bottom: 0px;
+    border: none;
+  };
+}
+
+.social__item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-left: 15px;
+  border: 2px solid $bg-color-section;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: $bg-pink;
+
+  &:hover {
+    border: 2px solid $bg-color;
+  }
+
+  &:active {
+    border: 2px solid $bg-color-section;
+    opacity: 0.7;
+  }
+}

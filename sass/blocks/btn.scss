@@ -1,6 +1,7 @@
 .btn {
   display:flex;
-  font-family: $main-font-bold;
+  font-family: $main-font;
+  font-weight: bold;
   justify-content: center;
   color: #ffffff;
   border: 3px solid #ffffff;
@@ -9,11 +10,24 @@
   &--download {
     width: 100%;
     @include set-font(18px, 18px);
-    
+
     padding-top: 14px;
     padding-bottom: 14px;
     border-radius: 25px 25px;
     background-color: #1d2631;
+    z-index: 20;
 
+    @include media(tablet) {
+      background-color: transparent;
+    };
+
+    &:hover {
+      background-color: #ffffff;
+      color: $bg-pink;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 }

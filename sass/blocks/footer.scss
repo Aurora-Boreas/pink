@@ -1,0 +1,54 @@
+.footer {
+  display: none;
+
+  @include media(tablet) {
+    display: flex;
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+
+.footer__wrapper {
+  @include wrapper-container();
+
+  @include media(tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  };
+}
+
+.footer__logo {
+  font-size: 0;
+  fill: $bg-color;
+
+  &:hover {
+    & svg {
+      fill: $bg-pink;
+    }
+  }
+
+  &:active {
+    & svg {
+      fill: rgba(40, 54, 69, 0.3);
+    }
+  }
+
+}
+
+.footer__logo-svg-tablet {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.footer__logo-svg-desktop {
+  @include media(tablet) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: flex;
+  }
+}

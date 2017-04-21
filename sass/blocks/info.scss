@@ -1,17 +1,46 @@
 .info {
   display: flex;
   flex-direction: column;
-  margin-bottom: -41px;
+  margin-top: 50px;
+
+  @include media(desktop) {
+    margin-top: 70px;
+  }
 }
 
 .info__wrapper {
   @include wrapper-container();
+
+  @include media(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 76px;
+  }
 }
 
 .info__text {
   @include set-font(24px, 20px);
-  font-family: $main-font-light;
+  font-family: $main-font;
+  font-weight: light;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
+  padding-bottom: 30px;
+
+  @include media(tablet) {
+    @include set-font(40px, 49px);
+    padding-bottom: 0;
+
+    &:last-child {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+
+  @include media(desktop) {
+    @include set-font(50px, 59px);
+  }
 }
