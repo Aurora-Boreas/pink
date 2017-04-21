@@ -1,0 +1,16 @@
+.ymaps-2-1-50-map {
+  max-height: 200px;
+  border: none;
+}
+
+@media (min-width: 700px) {
+  .ymaps-2-1-50-map {
+    min-height: 380px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ymaps-2-1-50-map {
+    min-height: 500px;
+  }
+}
