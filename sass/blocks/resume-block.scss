@@ -1,0 +1,13 @@
+.resume-block__title {
+  margin: 0;
+  text-align: center;
+  @include set-font(14px, 30px);
+  font-weight: normal;
+  color: $bg-color;
+}
+
+.resume-block__wrapper {
+  @include wrapper-container();
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

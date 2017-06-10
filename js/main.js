@@ -5,7 +5,7 @@ var mobile_menu = document.querySelector(".main-nav__list");
 var menu_top = document.querySelector(".main-nav__top");
 
 
- if (document.documentElement.clientWidth >= 800) {
+ if (document.documentElement.clientWidth >= 1999) {
     mobile_menu.classList.remove("main-nav__list--open")
   }
 
@@ -19,13 +19,7 @@ toggle_btn.addEventListener("click", function(event) {
 });
 
 /*lightSlider*/
-$(document).ready(function() {
-      $("#content-slider").lightSlider({
-                item:1,
-                loop:true,
-                keyPress:true
-             });
-    });
+
 
 /*map*/
 function initMap() {
