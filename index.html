@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/lightslider.css">
     <link rel="stylesheet" href="css/map.css">
   </head>
-  <body" >
+  <body>
 
   <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
 
@@ -187,10 +187,10 @@
               <a href="#" class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html" class="main-nav__link">Фотографии</a>
+              <a href="#" class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Конкурс</a>
+              <a href="#" class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
@@ -471,8 +471,14 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/lightslider.js"></script>
     <script src="js/main.js"></script>
-    <script>
-
-  </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                      item:1,
+                      loop:true,
+                      keyPress:true
+                   });
+          });
+    </script>
   </body>
 </html>

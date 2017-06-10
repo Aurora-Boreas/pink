@@ -1,0 +1,89 @@
+.photo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-container__wrapper {
+  @include wrapper-container()
+}
+
+.photo-container__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background-color: $bg-color-section;
+
+  &--first-rait {
+    position: relative;
+    background-color: #ffffff;
+  }
+}
+
+.photo-container__picture {
+  width: 280px;
+  height: 180px;
+  &--first-rait {
+    width: 100%;
+    height: 137px;
+    padding: 0;
+  }
+}
+
+.photo-container__first-rait {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  padding: 9px 19px;
+  background-color: $bg-pink;
+  color: #ffffff;
+  text-transform: uppercase;
+  @include set-font(12px, 24px);
+  font-weight: bold;
+}
+
+.photo-container__autor {
+  @include set-font(14px, 24px);
+  font-weight: bold;
+  color: $bg-color;
+  white-space: pre;
+}
+
+.photo-container__countdown {
+  @include set-font(12px, 24px);
+  font-weight: lighter;
+  color: $bg-color;
+  text-transform: uppercase;
+  flex-shrink: 3;
+}
+
+.photo-container__description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 25px;
+
+  &--first-rait {
+    background-color: $bg-color-section;
+  }
+}
+
+.photo-container__text {
+  width: 100%;
+  @include set-font(14px, 24px);
+  color: $bg-color;
+}
+
+.photo-container__like {
+  margin-top: 8px;
+  padding-left: 30px;
+  @include set-font(12px, 24px);
+  color: $bg-pink;
+  text-transform: uppercase;
+  background: transparent url("../img/icon-heart-pink.svg") 0 5px no-repeat;
+  background-size: 13px 12px;
+}

@@ -31,11 +31,19 @@
   }
 }
 
+.promo--slogan {
+  padding-bottom: 0;
+}
+
 .promo__wrapper {
   position: relative;
   @include wrapper-container();
   width: 100%;
   margin: 0 auto;
+}
+
+.promo__wrapper--slogan {
+  padding: 0;
 }
 
 .promo__description {
@@ -122,6 +130,15 @@
   }
 }
 
+.promo__title--slogan {
+  @include wrapper-container();
+  padding-top: 93px;
+  padding-bottom: 81px;
+  @include set-font(24px, 30px);
+  font-weight: lighter;
+  color: #ffffff;
+}
+
 .promo__apps-list {
   position: relative;
   display: flex;
@@ -160,4 +177,18 @@
   @include media(tablet) {
    @include set-font(18px, 24px);
   }
+}
+
+
+
+.promo__text--slogan {
+  width: 100%;
+  padding-top: 46px;
+  padding-bottom: 47px;
+  padding-left: 40px;
+  padding-right: 40px;
+  @include set-font(14px, 30px);
+  color: $bg-color;
+  background: #ffffff;
+
 }
